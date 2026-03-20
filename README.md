@@ -7,7 +7,7 @@ It demonstrates a complete cloud-hosted full-stack architecture with automated C
 ## 🚀 Live Deployments
 
 * **Front-End (React):** https://polite-pond-09db4b000.6.azurestaticapps.net
-* **Back-End (.NET API):** csp-lab05-backend-akinda-f3byepc3hgh8adf8.eastasia-01.azurewebsites.net/weatherforecast
+* **Back-End (.NET API):** https://csp-lab05-backend-akinda-f3byepc3hgh8adf8.eastasia-01.azurewebsites.net/weatherforecast
 
 ## 🛠️ Technology Stack
 
