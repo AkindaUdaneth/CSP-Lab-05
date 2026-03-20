@@ -23,11 +23,13 @@ jobs:
         with:
           dotnet-version: '10.x'
 
+      # CHANGED: Added ./backend to tell it where the project file is
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build ./backend --configuration Release
 
+      # CHANGED: Added ./backend here as well
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish ./backend -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -62,4 +64,3 @@ jobs:
           app-name: 'csp-lab05-backend-akinda'
           slot-name: 'Production'
           package: .
-          
